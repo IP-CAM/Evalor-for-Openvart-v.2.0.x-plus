@@ -17,11 +17,6 @@ Installation instructions
      3. Enter the ID number of your online store and the API code and configure
      the module.
 
-     4. If you want to send invitations you must configure a cronjob. The cronjob is
-     must be done every afternoon with the url:
-
-       http://www.su-tienda-online.es/index.php?route=module/webwinkelkeur/cron
-
      To carry out this process put the following rule in your crontab.
 
        30 23 * * * wget --quiet -O- 'http://www.your-store-online.es/index.php?route=module/webwinkelkeur/cron' 
